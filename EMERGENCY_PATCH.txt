@@ -1,0 +1,6 @@
+Add these exact two lines immediately below the imports in the OLD app.py that Streamlit is actually running:
+
+import builtins
+polish = builtins.polish = "rgb(213,219,222)"
+
+This fixes the old line 107 without replacing the rest of the app.
